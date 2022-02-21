@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "HAKO Downloader",
+  "description": "This extension allows HAKO users to download LN/WN volumes.",
+  "version": "1.0",
+
+  "background": {
+  	"scripts": ["background.js"]
+  },
+
+  "permissions": [
+    "activeTab",
+    "tabs", 
+    "<all_urls>"
+  ],
+
+  "content_scripts": [{
+  	"matches": ["<all_urls>"],
+  	"js": ["content.js", "/scripts/jquery-3.6.0.min.js"]
+  }],
+
+  "browser_action": {
+    "default_popup": "popup.html"
+  }
+}
