@@ -1,0 +1,70 @@
+body {
+	width: 450px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+#volumes {
+    padding: 10px;
+}
+
+#choice-toggle #btn {
+    width: 50%;
+}
+
+#volumes .card {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 15px;
+    background: #eaeaea;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#volumes .card:nth-of-type(1) {
+    margin-top: 0px;
+}
+
+#volumes .card:hover {
+    background: #e3e3e3;
+}
+
+#volumes #chosen {
+    color: white;
+    background-image: linear-gradient(to right, #1d794a , #1ab382);
+}
+
+#download, #choice-toggle {
+    padding: 10px;
+    display: flex;
+}
+
+button#btn:hover {
+    opacity: 95%;
+}
+
+button#btn:active, #volumes #chosen:active {
+    box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .2);
+}
+
+button#btn {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border-width: 0px;
+    background-image: linear-gradient(to left, #2f4897 , #31919a);
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+}
+
+#choice-toggle .select-all {
+    margin-right: 10px;
+}
+
+#choice-toggle .deselect-all {
+    background-image: linear-gradient(to right, #b52525 , #e1891b);
+}
